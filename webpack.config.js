@@ -14,6 +14,7 @@ module.exports = {
         path: path.resolve('./static/bundles/'),
         filename: "[name]-[hash].js"
     },
+    // devtool: 'source-map',
     plugins: [
         new BundleTracker({path: __dirname, filename: './webpack-stats.json'}),
         new MiniCssExtractPlugin({
