@@ -28,7 +28,7 @@ Debugging
 To enable source maps in `package.json` uncomment the line:
 ```javascript
 ...
-    devtool: 'source-map',
+    // devtool: 'source-map',
 ...
 ``` 
 # Project structure
