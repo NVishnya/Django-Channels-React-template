@@ -25,7 +25,7 @@ npm run build
 ```
 Debugging
 ---
-To enable source maps in `package.json` uncomment the line:
+To enable source maps in `webpack.config.js` uncomment the line:
 ```javascript
 ...
     // devtool: 'source-map',
