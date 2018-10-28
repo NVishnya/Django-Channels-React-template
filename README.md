@@ -1,3 +1,21 @@
+# Requirements
+
+
+This project requires **python 3.5.3**.
+
+Install **`python3-dev`** if you don't have it already.
+
+You also need **`Node.js`** version 8.X and **`npm`**. 
+
+
+
+# Set up
+**Virtual environment**
+---
+The main purpose of Python virtual environments is to create an isolated environment for Python projects. This means that each project can have its own dependencies, regardless of what dependencies every other project has. So you may want to use virtualenvironment to run this project.
+
+I suggest using [virtualenvwrapper](http://virtualenvwrapper.readthedocs.io/en/latest/) for that purpose.
+
 # Quickstart
 ```consile
 $ npm install
@@ -8,9 +26,8 @@ $ python3 manage.py migrate
 $ python3 manage.py runserver
 ```
 
+# Available scripts
 
-Available scripts
----
 The script to run the tests:
 ```console
 npm test
@@ -23,8 +40,8 @@ The script to run webpack in the production mode:
 ```console
 npm run build
 ```
-Debugging
----
+# Debugging
+
 To enable source maps in `webpack.config.js` uncomment the line:
 ```javascript
 ...
