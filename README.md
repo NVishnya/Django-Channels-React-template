@@ -1,9 +1,9 @@
 # Requirements
 
 
-This project requires **python 3.5.3**.
+This project requires **python 3.5.3** or higher.
 
-Install **`python3-dev`** if you don't have it already.
+You need to install **`python3-dev`**
 
 You also need **`Node.js`** version 8.X and **`npm`**. 
 
