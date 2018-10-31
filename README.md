@@ -15,7 +15,7 @@ I suggest using [virtualenvwrapper](http://virtualenvwrapper.readthedocs.io/en/l
 * Run `pip3 install -r requirements.txt` inside your project
 * Install node modules with `npm install`
 * Create the local database with `python3 manage.py migrate`
-* Run webpack to build the components with `npm run webpack`
+* Run webpack to build the components with `npm run build`
 * Run Django development server `python manage.py runserver`
 
 # Available scripts
