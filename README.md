@@ -10,7 +10,7 @@ The main purpose of Python virtual environments is to create an isolated environ
 # Quickstart
 * Сlone this repository
 * Run `pipenv install` inside your project
-* Rub `pipenv shell` to activate virtualenv
+* Run `pipenv shell` to activate virtualenv
 * Install node modules with `npm install`
 * Create the local database with `python3 manage.py migrate`
 * Run webpack to build the components with `npm run build`
