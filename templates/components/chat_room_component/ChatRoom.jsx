@@ -13,7 +13,7 @@ class MessagesList extends React.Component{
     }
     render(){
         return(
-            <div className="col-12">
+            <div className="col-12" id="chat-log">
                 {this.state.content.map(item => <p key={item.id}>{item.text}</p>)}
             </div>
         )
