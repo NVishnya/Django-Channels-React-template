@@ -20,14 +20,13 @@ class RoomInput extends React.Component{
     }
     render(){
         return (
-            <form onSubmit={this.handleSubmin} className="form-inline col-12">
-                <div className="form-group">
-                    <input type="text" placeholder="ROOM NAME"
-                        ref={this.roomNameInputRef} value={this.state.room_name} onChange={this.handleChange}
-                        className="form-control mr-2" />   
-                </div>
-                <input type="submit" value="Go!" className='btn btn-primary'/>
-            </form>
+            <center style={{"position": "relative", "top": "10px"}}>
+                <form onSubmit={this.handleSubmin}>
+                    <input id='room-input-field' type="text" placeholder="ROOM NAME" ref={this.roomNameInputRef}
+                           value={this.state.room_name} onChange={this.handleChange}/>   
+                    <input type="submit" value="Go!"/>
+                </form>
+            </center>
         )
     }
 }

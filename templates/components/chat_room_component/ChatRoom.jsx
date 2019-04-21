@@ -13,7 +13,7 @@ class MessagesList extends React.Component{
     }
     render(){
         return(
-            <div className="col-12" id="chat-log">
+            <div id="chat-log">
                 {this.state.content.map(item => <p key={item.id}>{item.text}</p>)}
             </div>
         )
@@ -56,19 +56,16 @@ class ChatRoom extends React.Component{
     }
     render(){
         return(
-            <div>
-                <form onSubmit={this.handleSubmin} className="form-inline col-12">
-                    <div className="form-group">
-                    <input type="text" placeholder="Type your message here" 
-                        ref={this.messageInputRef} value={this.state.current_message} onChange={this.handleChange} 
-                        className="form-control mr-2"/>
-                    </div>
-                    <input type="submit" value="Send" className='btn btn-primary'/>
+            <center style={{"position": "relative", "top": "10px"}}>
+                <form onSubmit={this.handleSubmin}>
+                    <input id='message-input-field' type="text" placeholder="Type your message here" ref={this.messageInputRef}
+                           value={this.state.current_message} onChange={this.handleChange}/>
+                    <input type="submit" value="Send"/>
                 </form>
                 <MessagesList content={this.state.messages}/>
                 <Websocket ref={this.socketRef} url={this.props.socket} 
                     onMessage={this.handleData.bind(this)} reconnect={true} />
-            </div>
+            </center>
         )
     }
 }

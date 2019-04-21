@@ -22,7 +22,6 @@
     "@babel/preset-react": "^7.0.0",
     "@babel/register": "^7.0.0",
     "babel-loader": "^8.0.2",
-    "bootstrap": "^4.0.0-alpha.6",
     "chai": "^4.2.0",
     "css-loader": "^1.0.0",
     "enzyme": "^3.6.0",
