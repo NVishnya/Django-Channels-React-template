@@ -47,10 +47,10 @@ class ChatTests(ChannelsLiveServerTestCase):
 
     def _enter_room(self, room):
         self.driver.get(self.live_server_url)
-        self._set_input(self.driver.find_element_by_xpath('//*[@id="room_input"]/form/div/input'), room)
+        self._set_input(self.driver.find_element(By.ID, 'room-input-field'), room)
 
     def _send_message(self, message):
-        self._set_input(self.driver.find_element_by_xpath('//*[@id="chat_room"]/div/form/div/input'), self.message)
+        self._set_input(self.driver.find_element(By.ID, 'message-input-field'), self.message)
 
     def _set_input(self, element, value):
         element.send_keys(value + '\n')
