@@ -53,3 +53,8 @@ Test files
 * **helper.js** We import some functions here in order to make them globally accessible. That way, you don’t need to import them explicitly in your test files anymore.
 * **dom.js**  In this file we setup pseudo browser environment for React components which render HTML eventually.
 * **test.js** Here we write our tests.
+
+* **chat/tests.py** A test suite of end-to-end tests using Selenium.
+
+
+
