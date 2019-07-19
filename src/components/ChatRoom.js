@@ -10,7 +10,7 @@ class ChatRoom extends React.Component {
             current_message: '',
             room: props.match.params.room,
             socket: new WebSocket(
-                "ws://" + window.location.host + "/ws/" + this.room + '/'
+                "ws://" + window.location.host + "/ws/" + props.match.params.room + '/'
             )
         }
         this.messageInputRef = React.createRef();
