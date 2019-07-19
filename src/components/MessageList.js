@@ -4,16 +4,16 @@ class MessageList extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            content: this.props.content
+            messages: this.props.messages
         }
     }
     componentWillReceiveProps(nextProps) {
-        this.setState({ content: nextProps.content });
+        this.setState({ messages: nextProps.messages });
     }
     render() {
         return (
             <div id="chat-log">
-                {this.state.content.map(item => <p key={item.id}>{item.text}</p>)}
+                {this.state.messages.map(item => <p key={item.id}>{item.text}</p>)}
             </div>
         )
     }
