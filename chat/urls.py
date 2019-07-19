@@ -1,4 +1,4 @@
-from chat.views import IndexView, RoomView, MessagesListView
+from chat.views import IndexView, MessagesListView
 from django.urls.conf import path
 
 urlpatterns = [
