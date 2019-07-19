@@ -33,9 +33,6 @@ class ChatRoom extends React.Component {
                 self.setState({ messages: data })
             })
     }
-    componentWillUnmount() {
-        this.serverRequest.abort();
-    }
     handleData(data) {
         let result = JSON.parse(data);
         this.setState({ messages: [...this.state.messages, result['message']] });
