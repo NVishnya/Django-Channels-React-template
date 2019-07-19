@@ -1,0 +1,5 @@
+{% load render_bundle from webpack_loader %}
+<div id="root"></div>
+{% render_bundle 'vendors' %}
+{% render_bundle 'main' %}
+{% render_bundle 'runtime~main' %}
