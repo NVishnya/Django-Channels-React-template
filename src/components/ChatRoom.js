@@ -27,9 +27,11 @@ class ChatRoom extends React.Component {
         });
     }
     getMessages() {
+        let self = this;
         $.get('/api/messages/' + this.state.room + '/?format=json')
-            .then(({ results }) => this.setState({ messages: results }));
-            console.log('ok');
+            .done(function (data) {
+                self.setState({ messages: data })
+            })
     }
     componentWillUnmount() {
         this.serverRequest.abort();
@@ -60,7 +62,7 @@ class ChatRoom extends React.Component {
                         value={this.state.current_message} onChange={this.handleChange} />
                     <input type="submit" value="Send" />
                 </form>
-                <MessageList content={this.state.messages} />
+                <MessageList messages={this.state.messages} />
             </center>
         )
     }
