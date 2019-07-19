@@ -17,17 +17,9 @@ The main purpose of Python virtual environments is to create an isolated environ
 * Run Django development server `python3 manage.py runserver`
 
 # Available scripts
-* `npm test` runs the tests
-* `npm run dev` runs webpack in the development mode
+* `npm run test` runs the tests
 * `npm run build` runs webpack in the production mode
 
-# Debugging
-To enable source maps in `webpack.config.js` uncomment the line:
-```javascript
-    ...
-    // devtool: 'source-map',
-    ...
-``` 
 #  About
 React Components
 -
@@ -50,9 +42,6 @@ Consumers
 
 Test files
 ---
-* **helper.js** We import some functions here in order to make them globally accessible. That way, you don’t need to import them explicitly in your test files anymore.
-* **dom.js**  In this file we setup pseudo browser environment for React components which render HTML eventually.
-* **test.js** Here we write our tests.
 
 * **chat/tests.py** A test suite of end-to-end tests using Selenium.
 
