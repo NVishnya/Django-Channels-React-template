@@ -35,7 +35,6 @@ class ChatRoom extends React.Component {
     handleData(data) {
         let result = JSON.parse(data);
         this.setState({ messages: [...this.state.messages, result['message']] });
-        console.log(this.state.messages)
     }
     sendSocketMessage(message) {
         this.state.socket.send(JSON.stringify({ message: message }));
