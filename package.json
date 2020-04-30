@@ -30,7 +30,7 @@
     ]
   },
   "devDependencies": {
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "react-app-rewired": "^2.1.3",
     "webpack-bundle-tracker": "^0.4.2-beta"
   }
